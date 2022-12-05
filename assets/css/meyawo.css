@@ -2130,6 +2130,16 @@ pre code {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .about-img {
+    width: 70% !important;
+  }
+
+  .bg-under {
+    display: none !important;
+  }
+}
+
 @media (max-width: 991.98px) {
   .table-responsive-lg {
     display: block;
@@ -12100,7 +12110,7 @@ pre .code {
   position: absolute;
   z-index: -10;
   top: -260px;
-  right: -20em;
+  right: em;
   opacity: 25%;
   width: 70%;
 }
@@ -12256,7 +12266,6 @@ pre .code {
   }
   .about-img-holder {
     max-width: 220px;
-    min-width: 100%;
     width: 100%;
     margin: auto;
     margin-bottom: 20px;
