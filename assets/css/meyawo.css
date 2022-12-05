@@ -12094,10 +12094,27 @@ pre .code {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* background-image: url(../imgs/header.jpg); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+}
+
+.bg-under {
+  position: absolute;
+  z-index: -10;
+  top: -260px;
+  right: -20em;
+  opacity: 25%;
+  width: 70%;
+}
+
+.bg-second {
+  position: absolute;
+  opacity: 25%;
+}
+
+.bg-third {
+  position: absolute;
+  opacity: 25%;
+  width: 50%;
+  left: -15em;
 }
 
 .header .overlay {
@@ -12275,7 +12292,7 @@ pre .code {
 
 .glow:hover {
   color: #fff;
-  -webkit-animation: glow 500ms ease-in-out infinite alternate;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
   -moz-animation: glow 500ms ease-in-out infinite alternate;
   animation: glow 500ms ease-in-out infinite alternate;
   cursor: pointer;
@@ -12283,9 +12300,9 @@ pre .code {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 10px #fff,  0 0 30px #e60073,  0 0 50px #e60073, 0 0 60px #e60073;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 0 0 20px #fff,  0 0 40px #ff4da6,  0 0 60px #ff4da6, 0 0 70px #ff4da6;
   }
 }
