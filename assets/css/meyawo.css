@@ -606,6 +606,8 @@ pre code {
           flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  align-items: center;
+  justify-content: center;
 }
 
 .no-gutters {
@@ -1172,7 +1174,7 @@ pre code {
     -webkit-flex: 0 0 33.33333%;
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%;
-    max-width: 33.33333%;
+    /* max-width: 33.33333%; */
   }
   .col-md-5 {
     -webkit-box-flex: 0;
@@ -11189,6 +11191,36 @@ p {
 }
 
 /*/ portfolio wrapper */
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr 1fr;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 20px;
+}
+
+.col-md-4:nth-child(1) {
+  grid-column: 1/2;
+}
+
+.col-md-4:nth-child(2) {
+  grid-column: 2/3;
+}
+
+.col-md-4:nth-child(3) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.col-md-4:nth-child(4) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
 .portfolio-card {
   display: block;
   position: relative;
@@ -12241,4 +12273,19 @@ pre .code {
   padding: 100px 0 !important;
 }
 
+.glow:hover {
+  color: #fff;
+  -webkit-animation: glow 500ms ease-in-out infinite alternate;
+  -moz-animation: glow 500ms ease-in-out infinite alternate;
+  animation: glow 500ms ease-in-out infinite alternate;
+  cursor: pointer;
+}
 
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
