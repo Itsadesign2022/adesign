@@ -2130,15 +2130,6 @@ pre code {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .about-img {
-    width: 70% !important;
-  }
-
-  .bg-under {
-    display: none !important;
-  }
-}
 
 @media (max-width: 991.98px) {
   .table-responsive-lg {
