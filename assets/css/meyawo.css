@@ -12098,7 +12098,7 @@ pre .code {
 }
 
 .bg-under {
-  /* position: absolute; */
+  position: absolute;
   z-index: -10;
   top: -260px;
   opacity: 25%;
@@ -12106,12 +12106,12 @@ pre .code {
 }
 
 .bg-second {
-  /* position: absolute; */
+  position: absolute;
   opacity: 25%;
 }
 
 .bg-third {
-  /* position: absolute; */
+  position: absolute;
   opacity: 25%;
   width: 50%;
   left: -15em;
