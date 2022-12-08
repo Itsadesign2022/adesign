@@ -12101,7 +12101,6 @@ pre .code {
   position: absolute;
   z-index: -10;
   top: -260px;
-  right: em;
   opacity: 25%;
   width: 70%;
 }
