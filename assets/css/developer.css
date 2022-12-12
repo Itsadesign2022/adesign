@@ -1,0 +1,36 @@
+
+/****************/
+
+@media (max-width: 400px){
+    .bg-under{
+        top: 0;
+        right: 0;
+        overflow: hidden;
+    }
+
+    .bg-second {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .desktop{
+        display: none;
+    }
+    .about-img-mobile{
+        border-radius: 50%;
+        width: 320px;
+        height: auto;
+    }
+    .portfolio{
+        display: block;
+    }
+}
+
+.about-img-mobile{
+    display: none;
+}
+
+.about-img {
+    width: 320px !important;
+    height: auto;
+}
