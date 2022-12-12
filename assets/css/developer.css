@@ -24,6 +24,12 @@
     .portfolio{
         display: block;
     }
+    section#about {
+        margin-top: -192px;
+    }
+    .header-content.container {
+        margin-top: -100px;
+    }
 }
 
 @media (min-width: 401px){
