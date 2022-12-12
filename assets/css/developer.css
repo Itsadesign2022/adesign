@@ -26,8 +26,11 @@
     }
 }
 
+@media (min-width: 401px){
+    
 .about-img-mobile{
     display: none;
+}
 }
 
 .about-img {
