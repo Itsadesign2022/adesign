@@ -6,6 +6,7 @@
         top: 0;
         right: 0;
         overflow: hidden;
+        width: unset;
     }
 
     .bg-second {
@@ -29,6 +30,12 @@
     }
     .header-content.container {
         margin-top: -100px;
+    }
+    .glow{
+        color: #fff;
+        -webkit-animation: glow 2s ease-in-out infinite alternate;
+        -moz-animation: glow 500ms ease-in-out infinite alternate;
+        animation: glow 500ms ease-in-out infinite alternate;
     }
 }
 
