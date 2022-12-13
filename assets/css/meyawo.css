@@ -12291,9 +12291,9 @@ pre .code {
 
 .glow:hover {
   color: #fff;
-  -webkit-animation: glow 2s ease-in-out infinite alternate;
-  -moz-animation: glow 500ms ease-in-out infinite alternate;
-  animation: glow 500ms ease-in-out infinite alternate;
+  /* -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 500ms ease-in-out infinite alternate; */
+  animation: glow 1000ms ease-in-out infinite alternate;
   cursor: pointer;
 }
 
