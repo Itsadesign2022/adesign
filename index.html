@@ -211,15 +211,16 @@
                 <div class="col-md-6">
                     <div class="testimonial-card">
                         <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar2.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                           
+                            <img src="assets/imgs/ihc.png" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                           
                         </div>
                         <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
+                            <p class="testimonial-card-subtitle">"Been working with Aaron for a while now and I'd say I am very impressed at what he can do. He's my website & tech wizard and I feel so grateful for his help. He's very dependable! Turnaround time and quality of work have been great! I could always depend on Aaron. It's such a relief having backup, and I've been able to get more done and take on more clients because of him. It's hard to find a good developer, so I definitely recommend him!"</p>
+                            <h6 class="testimonial-card-title">-Gracianne Julito<br>
+                                CEO, iHelpCreate Digital Creative Studio</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                     <div class="testimonial-card">
                         <div class="testimonial-card-img-holder">
                             <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
@@ -229,7 +230,7 @@
                             <h6 class="testimonial-card-title">Emily Reb</h6>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div> <!-- end of container -->
     </section> <!-- end of testimonial section -->
@@ -241,13 +242,13 @@
             <p class="section-subtitle">You Can Reach Me Through :</p>
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
-            <form action="mailto:aphilvs@gmail.com" class="contact-form col-md-10 col-lg-8 m-auto" method="post" enctype="text/plain" name="EmailForm">
+            <form onsubmit="sendEmail(); reset(); return false;" class="contact-form col-md-10 col-lg-8 m-auto" method="post" enctype="text/plain" name="EmailForm">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
                         <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" required>                 
+                        <input type="email" class="form-control" id="emailad" placeholder="Enter Email" required>                 
                     </div>
                     <div class="form-group col-sm-12">
                         <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
@@ -283,6 +284,22 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+                    Email.send({
+            Host : "smtp.gmail.com",
+            Username : "aphilvs@gmail.com",
+            Password : "a2zSaintz",
+            To : 'aphilvs@gmail.com',
+            From : document.getElementById('emailad').value,
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+        }
+    </script>
 
 </body>
 </html>
