@@ -242,7 +242,7 @@
             <p class="section-subtitle">You Can Reach Me Through :</p>
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
-            <form onsubmit="sendEmail(); reset(); return false;" class="contact-form col-md-10 col-lg-8 m-auto" method="post" enctype="text/plain" name="EmailForm">
+            <form action="https://formsubmit.co/aphilvs@gmail.com" class="contact-form col-md-10 col-lg-8 m-auto" method="POST" enctype="text/plain" name="EmailForm">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
                         <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
@@ -284,22 +284,7 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-                    Email.send({
-            Host : "smtp.gmail.com",
-            Username : "aphilvs@gmail.com",
-            Password : "a2zSaintz",
-            To : 'aphilvs@gmail.com',
-            From : document.getElementById('emailad').value,
-            Subject : "This is the subject",
-            Body : "And this is the body"
-        }).then(
-        message => alert(message)
-        );
-        }
-    </script>
+
 
 </body>
 </html>
